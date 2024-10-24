@@ -34,8 +34,8 @@ app.use("/api/v1", user_1.default);
 connectToDB("dentalista", (err) => {
     if (!err) {
         // Start server
-        app.listen(process.env.SERVER_PORT, () => {
-            console.info(`API is now running on port ${process.env.SERVER_PORT}. MongoDB was also initialized.`);
+        app.listen(process.env.PORT, () => {
+            console.info(`API is now running on port ${process.env.PORT}. MongoDB was also initialized.`);
         });
     }
     else {

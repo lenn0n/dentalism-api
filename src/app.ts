@@ -38,8 +38,8 @@ app.use("/api/v1", userRoutes);
 connectToDB("dentalista", (err: any) => {
   if (!err) {
     // Start server
-    app.listen(process.env.SERVER_PORT, () => {
-      console.info(`API is now running on port ${process.env.SERVER_PORT}. MongoDB was also initialized.`)
+    app.listen(process.env.PORT, () => {
+      console.info(`API is now running on port ${process.env.PORT}. MongoDB was also initialized.`)
     })
   } else {
     console.error(`An error occured while trying to connect to MongoDB URI. ${process.env.MONGO_DB_URI}`);
