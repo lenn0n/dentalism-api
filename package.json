@@ -5,7 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
+    "prod": "node -r module-alias/register dist/app.js",
     "start-ts": "ts-node -r tsconfig-paths/register src/app.ts",
     "dev": "nodemon -r tsconfig-paths/register src/app.ts"
   },
@@ -19,6 +19,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "jwt-decode": "^4.0.0",
+    "module-alias": "^2.2.3",
     "mongodb": "^6.9.0",
     "nodemailer": "^6.9.15"
   },
@@ -30,5 +31,15 @@
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
+  },
+  "_moduleAliases": {
+    "@routes": "dist/routes",
+    "@utils": "dist/utils",
+    "@controllers": "dist/controllers",
+    "@graphql": "dist/graphql",
+    "@mongodb": "dist/mongodb",
+    "@hooks": "dist/hooks",
+    "@definetypes": "dist/types",
+    "@services": "dist/services"
   }
 }
