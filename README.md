@@ -1,6 +1,6 @@
-### Simple NodeJS + ExpressJS + TypeScript Boilerplate 
+### Dentalism API
 
-A boilerplate for starting a new project using the following technologies:
+A personal project using the following technologies:
 
 
 ⭐ NodeJS
