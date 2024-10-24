@@ -3,3 +3,4 @@ package-lock.json
 dumps
 .env
 .vercel
+dist
